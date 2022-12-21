@@ -102,4 +102,15 @@ body {
     color:black;
 }
 
+/*
+    Styling for the slideshow projects/experience
+*/
+
+.slides {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
 
