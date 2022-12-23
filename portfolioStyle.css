@@ -106,11 +106,12 @@ body {
     Styling for the slideshow projects/experience
 */
 
-.slides {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+.row {
+    display: flex
 }
 
+.column {
+    flex: 33.3%;
+}
 
 
