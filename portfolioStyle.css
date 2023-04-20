@@ -237,3 +237,8 @@ footer {
     padding: 1%;
     
 }
+
+footer {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
