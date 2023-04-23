@@ -4,50 +4,166 @@
     <head>
         <title> nikhilYates </title>
         <link rel = "stylesheet" type = "text/css" href = "portfolioStyle.css" title = "style">
+        <script src = "portfolio.js"></script>
         
     </head>
     
-    <body>
-      
-        
-
+    <body class = "main">
         <a name="top"></a>
-        <br>
-        <br>
-        <div class="Navigation">
-            <a class = "tiger" href="portfolioWeb.html"><img src = "ny.svg" alt = "TIGER" style="height:100px;width:100px;align-items:center;"></a>
-            <a class = "linkt" href="contact.html">CONTACT</a>
-            <a class = "resume" href="nikhilyates.pdf" target="_blank">RESUME</a>
-            <a class = "git" href="https://github.com/nikhilYates" target="_blank">GITHUB</a>
-            <a class = "resume" href="work.html">WORK</a>
-        </div>
-        
-        <div>
-            <h1 class = "ny"> nikhil yates </h1>
-            <p class = "edu"> Honours BSc. Computer Science (2024)</p>
-            <p class = "edu"> Bergeron Entrepreneur in Science and Technology (BEST) Candidate 2024</p>
-        </div>
-        <br>
-        <p class = "descript">I'm goal-oriented, passionate about tech and constantly looking for different ways to integrate my creativity into problem solving. I have a wide technical skillset from working with numerous app development environments, design tools and hardware. Blockchain, embedded systems and robotics are what I'm currently focusing on, but my interests also lie in space software dev, digital mental health resources, and product design. Developing unique solutions to tackle global issues is something I look forward pursuing.</p>
-        
-        <!--Commenting this jus a way to make the screen load -->
-        
-    <br>
-    <br>
-    <br>    
-    <br>
+            
+        <!--main row (all encompassing)-->
+        <div class = "bigRow">
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-        
-    <footer>NIKHIL YATES 2023</footer>
+            <!-- div for scroll wheel animation -->
+            <div class = "scrollWheel">
+                <img class="scrollTing" src="scrollWheel.svg" style="height:100px;width:100px;position: fixed;vertical-align: middle; left: 4%">
+                <br>
+            </div>
+
+
+
+            <!--Div for everything else-->
+            <div class = "mainDiv">
+                <br>
+                <br>
+                <div id="Navigation">
+                    <a id = "tiger" href="#top"><img src = "ny.svg" alt = "TIGER" style="height:100px;width:100px;align-items:center;"></a>
+                    <a class = "git" href="https://github.com/nikhilYates" target="_blank">GITHUB</a>
+                    <a class = "linkt" href="#about">ABOUT</a>
+                    <a class = "resume" href="nikhilyates.pdf" target="_blank">RESUME</a>
+                    <a class = "resume" href="#work">WORK</a>
+                </div>
+                
+                <div>
+                    <h1 class = "ny"> nikhil yates </h1>
+                    <br>
+                    <p class = "edu"> Honours BSc. Computer Science (2024)</p>
+                    <p class = "edu"> Bergeron Entrepreneur in Science and Technology (BEST) Candidate 2024</p>
+                </div>
+                <br>
+                <p class = "descript">I'm goal-oriented, passionate about tech and constantly looking for different ways to integrate my creativity into problem solving. I have a wide technical skillset from working with numerous app development environments, design tools and hardware. Blockchain, embedded systems and robotics are what I'm currently focusing on, but my interests also lie in space software dev, digital mental health resources, and product design. Developing unique solutions to tackle global issues is something I look forward pursuing.</p>
+                
+                <!--Commenting this jus a way to make the screen load -->
+
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a name="work"></a>
+                <h2 class="curricular">xtraCurclrs (some ofMyWork) { </h2>
+                    <div class="row">
+            
+                        <div class="column">
+                            <div class="PROJNAME">CR.Y
+                                PTO</div>
+                            <div class = "overlay">
+                                <img src="nyWhite.svg" class="ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/mbagz-chain" target="_blank"> MBAGZ <br> (BLOCKCHAIN PROJECT) </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="PROJNAME">D.ATA
+                                BASE</div>
+                            <div class = "overlay">
+                                <img src="nyWhite.svg" class = "ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/inventoryTracker" target="_blank"> INVENTORY MANAGEMENT <br> (DATABASE PROJECT) </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="PROJNAME">ANA
+                                LY.TICS
+                                </div>
+                            <div class = "overlay">
+                                <img src="nyWhite.svg" class = "ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/dataScience" target="_blank"> DATA SCIENCE <br> (PYTHON COURSE) </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="column">
+                            <div class = "PROJNAME">MCU.M
+                                OTOR
+                            </div>
+                            <div class = "overlay">
+                                <img src="nyWhite.svg" class = "ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/dataScience" target="_blank"> MCU MOTOR <br> (EMBEDDED SYSTEMS) </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class = "PROJNAME">MCU.M
+                                OTOR
+                            </div>
+                            <div class = "overlay">
+                                <img src="nyWhite.svg" class = "ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/dataScience" target="_blank"> MCU MOTOR <br> (EMBEDDED SYSTEMS) </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <a class="return" href="#top">return;</a>
+                    
+                    <h2 class="curricular">} </h2>
+                    <br>
+                    <br>
+                    <a name="about"></a>
+                    <h2 class="curricular">aboutMe () {</h2>
+                        
+                        <div class="resumeBoi">
+
+                        <div class="resumeBruh">
+                            <br>
+                            <h3 class="resume-header">workExperience[] <span class="resumeBrackets"> = {</span></h3>
+                                <h3 class="resume-info">{ESSENCE CubeSat Mission, Software Developer, (2021-2022)},</h3>
+                                <h3 class="resume-info-curr">{Define Capital Inc., Private Equity Analyst, (2023-)}</h3>
+                            <h3 class="resumeBr">};</h3>
+
+                            <h3 class="resume-header">skillSet[] <span class="resumeBrackets"> = {</span></h3>
+                                <h3 class="resume-info">{C, Java, Node.js, SQL, python, HTML, CSS, javascript, Bash, jQuery, HCS12 ASM},</h3>
+                                <h3 class="resume-info">{Operating Systems, Embedded Systems, Blockchain, RDBMS, Kali Linux},</h3>
+                                <h3 class="resume-info">{mySQL Workbench, Jupyter Lab, Spyder, AWS, Docker, MC9S12DG256CVPE}</h3>
+                                <h3 class="resume-info">{Microsoft Suite, Market Analysis, Financial Accounting, Financial Modelling and Valuation}</h3>
+                            <h3 class="resumeBr">};</h3>
+
+                            <h3 class="resume-header">languageArts[] <span class="resumeBrackets"> = {</span></h3>
+                                <h3 class="resume-info">{1, English},</h3>
+                                <h3 class="resume-info">{2, French},</h3>
+                                <h3 class="resume-info">{3, Italian},</h3>
+                                <h3 class="resume-info">{4, Gujarati}</h3>
+                            <h3 class="resumeBr">};</h3>
+                            <br>
+                        </div>
+                        <br>
+                        <a class="return" href="#top">return;</a>
+                    <h2 class="curricular">}</h2>
+
+                </div>
+            </div>
+        </div>
     </body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class = "footer">
+        <a class= "bstars" href="https://www.beatstars.com/nikhxly" target="_blank"><img src="tiger.svg" alt = "BEATSTARS" style="height:100px;width:100px;align-items:center;"></a>
+    </footer> 
 </div>
 </html>
 
