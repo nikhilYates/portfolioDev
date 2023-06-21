@@ -2,7 +2,7 @@
     <html>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <head>
-        <title> nikhilYates </title>
+        <title class> nikhilYates </title>
         <link rel = "stylesheet" type = "text/css" href = "portfolioStyle.css" title = "style">
         <script src = "portfolio.js"></script>
         
@@ -19,7 +19,7 @@
                 <div>
                     <nav id="Navigation" class="topnav" style="background-color: black;">
                         <ul>
-                            <li><a class = "tiger" href="https://github.com/nikhilYates/portfolioDev" target="_blank"><img src = "ny.svg" alt = "TIGER" style="height:125px;width:125px;align-items:left;"></a></li>
+                            <li><a class = "tiger" href="javascript:window.location.href=window.location.href"><img src = "ny.svg" alt = "TIGER" style="height:125px;width:125px;align-items:left;"></a></li>
                             <li><a class = "linkt" href="#contact">CONTACT</a></li>
                             <li><a class = "git" href="#about">ABOUT</a></li>
                             <li><a class = "resume" href="#work">WORK</a></li>
@@ -30,10 +30,17 @@
                     <label id="hamburger-menu" for="hamburger-input">
                         <nav id="sidebar-menu">
                             <ul>
-                                <li><a class = "tiger" href="https://github.com/nikhilYates/portfolioDev" target="_blank"><img src = "ny.svg" alt = "TIGER" style="height:125px;width:125px;align-items:left;"></a></li>
-                                <li><a class = "linkt" href="#contact">CONTACT</a></li>
-                                <li><a class = "git" href="#about">ABOUT</a></li>
+                                <li><a class = "tiger" href="#top"><img src = "ny.svg" alt = "TIGER" style="height:125px;width:125px;align-items:left;"></a></li>
                                 <li><a class = "resume" href="#work">WORK</a></li>
+                                <li><a class = "git" href="#about">ABOUT</a></li>
+                                <li><a class = "linkt" href="#contact">CONTACT</a></li>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <h4> > </h4>
                             </ul>
                         </nav>
                     </label>
@@ -55,7 +62,7 @@
                 <div class="container">
                     <span class="box">
                         <p class = "descript">I'm goal-oriented, passionate about tech and constantly looking for different ways to integrate my creativity into problem solving.
-                            Blockchain, embedded systems and robotics are what I'm currently focusing on. Also interested in the business side of things, mobile app dev, and AI. </p>
+                            Blockchain, embedded systems and robotics are what I'm currently focusing on. Also interested in the business side of things, mobile app dev, and AI</p>
                     </span>
                 </div>
             
@@ -67,6 +74,8 @@
                 
                 <a name="work"></a>
                 <h2 class="curricular">xtraCurclrs (some ofMyWork) { </h2>
+                    <p class="descript">mobile: press and hold box</p>
+                    
                     <div class="row">
             
                         <div class="column">
@@ -96,14 +105,48 @@
                         </div>
                     </div>
                     <br>
+                    <!--New ROW-->
                     <div class="row">
+            
                         <div class="column">
-                            <div class = "PROJNAME">MCU.M
-                                OTOR
+                            <div class="PROJNAME">WRI
+                                TING
+                            </div>
+                            <div class = "overlay">
+                                <img src="nyWhite.svg" class="ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/papers" target="_blank"> WRITING <br> (PAPERS ON TECH) </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class = "PROJNAME">MCU.
+                                MOTOR
                             </div>
                             <div class = "overlay">
                                 <img src="nyWhite.svg" class = "ovPic">
                                 <a class="caption" href="https://github.com/nikhilYates/mcuMotor" target="_blank"> MCU MOTOR <br> (EMBEDDED SYSTEMS) </a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!--New ROW-->
+                    <div class="row">
+            
+                        <div class="column">
+                            <div class="PROJNAME">SECU
+                                RITY
+                            </div>
+                            <div class="overlay">
+                                <img src="nyWhite.svg" class = "ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/Useful-Tools/tree/main/cryptography" target="_blank">SECURITY<br> (CRYPTOGRAPHY WORK)</a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="PROJNAME">WEB
+                                SCRP
+                            </div>
+                            <div class="overlay">
+                                <img src="nyWhite.svg" class = "ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/Useful-Tools" target="_blank">WEB SCRAPING<br> (PYTHON SCRIPTS)</a>
                             </div>
                         </div>
                         <div class="column">
@@ -113,8 +156,10 @@
                             
                         </div>
                     </div>
+                    
                     <br>
                     <br>
+                
                     <a class="return" href="#top">return;</a>
                     
                     <h2 class="curricular">} </h2>
@@ -147,6 +192,7 @@
                             <h3 class="resumeBr">};</h3>
                             <br>
                         </div>
+                        <br>
                         <br>
                         <a class="return" href="#top">return;</a>
                     <h2 class="curricular">}</h2>
