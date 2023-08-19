@@ -18,14 +18,9 @@
                 <br>
                 <br>
                 <header class="header">
-                    <a class = "tiger" href="#top"><img src = "nyWhite.svg" alt = "TIGER" style="height:125px;width:125px;align-items:left;"></a>
+                    <a class = "tiger" href="#top"><img src = "nyWhite.svg" alt = "TIGER" style="height:10%;width:10%;align-items:left;"></a>
                      <!-- <a class="bstars" href="https://www.beatstars.com/nikhxly" target="blank"><img src="whiteTiger.svg" alt="BEATSTARS" style="height:100px;width:100px;"></a> -->
                 </header>
-
-
-
-                
-                
                     
                 <input type="checkbox" id="hamburger-input" class="hamburger-showerx">
                 <label id="hamburger-menu" for="hamburger-input">
@@ -42,6 +37,9 @@
                             <br>
                             <br>
                             <br>
+                            <br>
+                            <br>
+                            
                             <h4> close > </h4>
                         </ul>
                     </nav>
@@ -50,11 +48,8 @@
                     
                     
                     <div class = "titleCont">
-                        
-                
-                
                         <h1 class = "ny"> nikhil yates </h1>
-                    </div>     
+                    </div>
                         <br>
                         <br>
                         <div class = "navDiv">
@@ -68,16 +63,43 @@
                                 
                             </div>
                         </div>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
+                    
+                    <div class="slider"></div>
+                    <script>
+                        const circle = document.querySelector('.slider');
+                        const animationDuration = 1200; // in milliseconds
+                        // const sleepDuration = 500;
+                        let isMovingUp = true;
+                    
+                        function animateCircle() {
+                        const startPosition = isMovingUp ? '20%' : '80%';
+                        const endPosition = isMovingUp ? '20%' : '50%';
+                    
+                        circle.style.transition = `top ${animationDuration}ms ease-in-out`;
+                        circle.style.top = endPosition;
+                        
+                        setTimeout(() => {
+                            circle.style.transition = '';
+                            circle.style.top = startPosition;
+                            isMovingUp = !isMovingUp;
+                            animateCircle();
+                            }, animationDuration);
+                        }
+                        animateCircle();
+                    </script>
+                    
+                        
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        
                         
                         
                         
@@ -101,6 +123,7 @@
                         <br>
                         <br>
                         <a name="work"></a>
+                        <div class="werk">
                             <div class="row">
                     
                                 <div class="column">
@@ -213,10 +236,6 @@
                                         <h3 class="resume-info">{Microsoft Suite, Market Analysis, Financial Accounting, Financial Modelling and Valuation}</h3>
                                     <h3 class="resumeBr">};</h3>
 
-                                    <h3 class="resume-header">languagez[][] <span class="resumeBrackets"> = {</span></h3>
-                                        <h3 class="resume-info">{English, French, Gujarati, Italian}</h3>
-                                        
-                                    <h3 class="resumeBr">};</h3>
                                     <br>
                                 </div>
                             </div>
@@ -242,9 +261,9 @@
                         <a name="contact"></a>
                         
                         <div class="contactInfo">
-                            <h2 class="contactMe">#define LinkedIn <span><a class="contactMe-Info" href="https://www.linkedin.com/in/nikhilyates/" target="_blank">nikhilyates</a></aNikhil></span></h2>
-                            <h2 class="contactMe">#define email <span><a class="contactMe-email">nikhxly11@gmail.com</a></aNikhil></span></h2>
-                            <h2 class="contactMe">#define Github <span><a class="contactMe-Info" href="https://github.com/nikhilYates" target="_blank">nikhilGit</a></aNikhil></span></h2>
+                            <h2 class="contactMe">LinkedIn <span><a class="contactMe-Info" href="https://www.linkedin.com/in/nikhilyates/" target="_blank"><br>nikhilyates</a></aNikhil></span></h2>
+                            <h2 class="contactMe">email <span><a class="contactMe-email"><br>nikhxly11@gmail.com</a></aNikhil></span></h2>
+                            <h2 class="contactMe">Github <span><a class="contactMe-Info" href="https://github.com/nikhilYates" target="_blank"><br>nikhilGit</a></aNikhil></span></h2>
                         </div>
                         <br>
                         <br>
@@ -252,7 +271,7 @@
                         <br>
                         <br>
                         <br>
-                        <h3 class="credits">nikhil yates 2023</h3>
+                        <h3 class="credits">nikhil yates 2023 ©</h3>
                         
                         
 

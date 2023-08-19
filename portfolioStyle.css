@@ -9,7 +9,7 @@ body {
     
     margin-left: 10%;
     margin-right: 10%;
-    
+    justify-content: center;
 
 }
 
@@ -41,10 +41,14 @@ header {
     opacity: 70%;
 }
 
-.scrollCont {
-    /* scroll-snap-type: y mandatory; */
-
+.titleCont {
+    justify-content: center;
 }
+
+.slider {
+    visibility: hidden;
+    
+  }
 
 .scrollArea {
     padding-left: 1%;
@@ -100,12 +104,14 @@ header {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 3rem;
     color: white;
+    
 }
 
 .ny {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 200;
     font-size: 15rem;
+    
     color: white;
     /* line-height: 200px; */
     margin-bottom: 5%;
@@ -126,7 +132,7 @@ header {
 .PROJNAME {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 200;
-    font-size: 8rem;
+    font-size: 8.5rem;
     
     margin-bottom: 0;
     font-stretch: condensed;
@@ -210,8 +216,7 @@ a.PROJLINK:hover {
     float: left;
     margin-left: -8%;
     position: fixed;
-    width: 5%;
-    height: 5%;
+    
 
 
 }
@@ -417,7 +422,7 @@ footer {
 }
 
 .resumeBoi {
-    padding-bottom: 10px;
+    
     height: 100%;
 }
 
@@ -458,7 +463,7 @@ footer {
 .resumeBrackets {
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
     font-weight:700;
 }
@@ -509,7 +514,7 @@ footer {
 .contactMe {
     
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.3rem;
     color: #fff;
     font-weight:700;
@@ -678,6 +683,7 @@ opacity: 0.4;
         min-height: 100vh;
         scroll-snap-stop: always;
         
+        
     }
 
     .resumeBoi {
@@ -697,7 +703,7 @@ opacity: 0.4;
 
     .PROJNAME {
         font-size: 5rem;
-        text-align: center;
+        text-align: left;
         
     }
 
@@ -739,13 +745,6 @@ opacity: 0.4;
   
 @media screen and (max-width: 1000px) {
 
-    
-
-    html {
-        scroll-snap-type: y mandatory;
-    }
-
-
     body {
         margin-right: 17%;
     }
@@ -754,17 +753,58 @@ opacity: 0.4;
         align-items: left;
     }
 
+    .spacer {
+        visibility: none;
+    }
+
     .ny {
         
         margin-top: 50%;
+        margin-left: 10%;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 200;
-        font-size: 12rem;
+        font-size: 5rem;
         line-height: 80%;
-        writing-mode:horizontal-tb;
-        transform: rotate(-90deg);
+        /* writing-mode:horizontal-tb;
+        transform: rotate(-90deg); */
         letter-spacing: 20px;
         
+    }
+
+    .slider {
+        margin-top: 80%;
+        visibility: visible;
+        width: 50px;
+        height: 50px;
+        border: 10px solid white;
+        opacity: 30%;
+        margin-left: 40%;
+        border-radius: 50%;
+        
+        position: absolute;
+        /* top: 50%; */
+        transform: translate(-50%, -50%);
+    }
+
+    .resume-header {
+        font-size: 1rem;
+    }
+
+    .resume-info {
+        font-size: 1rem;
+    }
+
+    .resume-info-curr {
+        font-size: 1rem;
+    }
+
+    .resumeBr {
+
+        font-size: 1rem;
+    }
+
+    .resumeBrackets {
+        font-size: 1rem;
     }
 
     #Navigation {
@@ -785,6 +825,7 @@ opacity: 0.4;
         min-height: 100vh;
         scroll-snap-stop: always;
         
+        
     }
 
     .resumeBoi {
@@ -794,23 +835,30 @@ opacity: 0.4;
 
     
 
-    .row-end {
+    .row {
         display:block;
-        height: 500px;
-        column-gap: 500px;
-        
         
     }
 
+    .row-end {
+        
+        height: 500px;
+        column-gap: 500px;
+        display: block;
+        padding: 0;
+    }
+
     .PROJNAME {
-        font-size: 5rem;
-        text-align: center;
+        font-size: 3.5rem;
+        text-align: left;
+        
         
     }
 
     a.PROJLINK {
         color: #fff;
         text-decoration: none;
+        
         
     }
 
@@ -825,8 +873,8 @@ opacity: 0.4;
         outline: 5px solid white;
         overflow: hidden;
         width: 100%;
-        row-gap: 100px;
-        /* width: 33.3%; */
+        /* row-gap: 100px; */
+        
         
     } 
 
