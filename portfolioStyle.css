@@ -19,8 +19,13 @@ body {
     
 }
 
-header {
+/* .header {
     align-items: right;
+} */
+
+.header a {
+    display: block;
+    z-index: -1;
 }
 
 .scrollWheel {
@@ -77,27 +82,27 @@ header {
 
 .titleCont {
     text-align: center;
-    background:
-    /* linear-gradient(to right, rgb(255, 255, 255) 4px, transparent 4px) 0 0, */
-    linear-gradient(to right, rgb(255, 255, 255) 4px, transparent 4px) 0 100%,
-    linear-gradient(to left, rgb(255, 255, 255) 4px, transparent 4px) 100% 0,
-    /* linear-gradient(to left, rgb(255, 255, 255) 4px, transparent 4px) 100% 100%, */
-    /* linear-gradient(to bottom, rgb(255, 255, 255) 4px, transparent 4px) 0 0, */
-    linear-gradient(to bottom, rgb(255, 255, 255) 4px, transparent 4px) 100% 0,
-    linear-gradient(to top, rgb(255, 255, 255) 4px, transparent 4px) 0 100%,
-    linear-gradient(to top, rgb(255, 255, 255) 4px, transparent 4px) 0 100%;
+  /*  background:*/
+  /*  !* linear-gradient(to right, rgb(255, 255, 255) 4px, transparent 4px) 0 0, *!*/
+  /*  linear-gradient(to right, rgb(255, 255, 255) 4px, transparent 4px) 0 100%,*/
+  /*  linear-gradient(to left, rgb(255, 255, 255) 4px, transparent 4px) 100% 0,*/
+  /*  !* linear-gradient(to left, rgb(255, 255, 255) 4px, transparent 4px) 100% 100%, *!*/
+  /*  !* linear-gradient(to bottom, rgb(255, 255, 255) 4px, transparent 4px) 0 0, *!*/
+  /*  linear-gradient(to bottom, rgb(255, 255, 255) 4px, transparent 4px) 100% 0,*/
+  /*  linear-gradient(to top, rgb(255, 255, 255) 4px, transparent 4px) 0 100%,*/
+  /*  linear-gradient(to top, rgb(255, 255, 255) 4px, transparent 4px) 0 100%;*/
 
 
-    /* box-shadow: 
-        0 0 10px 5px #48abe0,
-        0 0 20px 7px #ebecca,
-        0 0 25px 20px #8a2be2,
-        0 0 30px 25px #ff1493; */
-    
+  /*  !* box-shadow: */
+  /*      0 0 10px 5px #48abe0,*/
+  /*      0 0 20px 7px #ebecca,*/
+  /*      0 0 25px 20px #8a2be2,*/
+  /*      0 0 30px 25px #ff1493; *!*/
+  /*  */
 
-  background-repeat: no-repeat;
-  background-size: 5% 10%;
-  margin-bottom: 5%;
+  /*background-repeat: no-repeat;*/
+  /*background-size: 5% 10%;*/
+  /*margin-bottom: 5%;*/
 }
 
 .credits {
@@ -159,6 +164,10 @@ a.PROJLINK:hover {
     color: rgb(186, 186, 186);
 }
 
+.topnav {
+    
+}
+
 
 .CONTACT {
 
@@ -168,7 +177,7 @@ a.PROJLINK:hover {
     line-height: 8vw;
     
     font-stretch: condensed;
-    position: flex;
+    /*position: flex;*/
 }
 
 .edu {
@@ -226,12 +235,10 @@ a.PROJLINK:hover {
     /* float: left; */
     margin-left: -8%;
     position: fixed;
-    
-
-
 }
 
-.tiger:hover {
+
+.tiger a:hover {
     opacity: 80%;
 }
 
@@ -487,7 +494,7 @@ footer {
 
 .container {
   display: flex;
-  align-items: left;
+  text-align: left;
   justify-content: center;
 }
 
@@ -759,11 +766,11 @@ opacity: 0.4;
     }
 
     .titleCont {
-        align-items: left;
+        text-align: left;
     }
 
     .spacer {
-        visibility: none;
+        visibility: hidden;
     }
 
     .ny {
