@@ -3,6 +3,12 @@ html {
     /* background-image: url('matrixWebonWhite.svg'); */
     background-color: black;
     scroll-snap-type: y proximity;
+    scrollbar-gutter: initial;
+
+}
+
+::-webkit-scrollbar {
+    color: black;
 }
 
 body {
@@ -61,7 +67,7 @@ body {
     padding-bottom: 1%;
     height: 100vh;
     scroll-snap-align: start;
-    overflow: auto;
+    overflow: visible;
     
     /* scroll-snap-stop: normal; */
 }
@@ -697,7 +703,7 @@ opacity: 0.4;
     .scrollArea {
         /* border: 1px solid white; */
         min-height: 100vh;
-        scroll-snap-stop: always;
+        scroll-snap-stop: normal;
         
         
     }
@@ -839,7 +845,7 @@ opacity: 0.4;
     .scrollArea {
         /* border: 1px solid white; */
         min-height: 100vh;
-        scroll-snap-stop: always;
+
         
         
     }
