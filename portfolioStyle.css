@@ -25,6 +25,14 @@ body {
     
 }
 
+.slabz:hover {
+    opacity: 75%;
+}
+
+.tiger:hover {
+    opacity: 75%;
+}
+
 /* .header {
     align-items: right;
 } */
@@ -153,7 +161,7 @@ body {
 .PROJNAMEend {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 200;
-    font-size: 8.5rem;
+    font-size: 8rem;
     
     margin-bottom: 0;
     font-stretch: condensed;
@@ -402,6 +410,13 @@ a.return {
 
 a.return:hover {
     opacity: 50%;
+}
+
+.menuWink {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
 }
 
 footer {
