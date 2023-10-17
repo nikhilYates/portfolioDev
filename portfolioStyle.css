@@ -26,6 +26,10 @@ body {
     
 }
 
+.button-group-mobile {
+    visibility: hidden;
+}
+
 .slabz:hover {
     opacity: 75%;
 }
@@ -71,10 +75,11 @@ body {
   }
 
 .scrollArea {
+    display:contents;
     padding-left: 1%;
     padding-right: 1%;
     padding-bottom: 1%;
-    height: 100vh;
+    min-height: 100vh;
     scroll-snap-align: start;
     overflow: visible;
     
@@ -284,6 +289,10 @@ a.PROJLINK:hover {
     color: white;
 }
 
+.p-mobile-info {
+    visibility: hidden;
+}
+
 .column {
     flex-grow: 1;
     position:relative;
@@ -333,6 +342,10 @@ a.caption {
     transform: translate(-50%, -50%);
     text-decoration: none;
     flex: auto;
+}
+
+#about-resume {
+    height: 100vh;
 }
 
  .contact .overlay {
@@ -523,7 +536,6 @@ a.bstars:hover {
   
 #hamburger-menu {
     position: fixed;
-    background-color: white;
     z-index: 1;
     top: 5%;
     right: 10%;
@@ -537,11 +549,12 @@ a.bstars:hover {
     transition: all 300ms ease;
     background: linear-gradient(
     to bottom, 
-    black, black 20%, 
-    white 20%, white 40%, 
-    black, black 60%, 
-    white 60%, white 80%, 
-    black 80%, black 100%
+    white, white 10%, 
+    rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 40%, 
+    white 40%, white 50%, 
+    rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0) 80%, 
+    white 80%, white 90%,
+    rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%
     );
 }
   
@@ -603,7 +616,7 @@ opacity: 0.4;
 @media screen and (max-width: 1200px) {
 
     body {
-        border: 1px solid white;
+        
     }
 
     .ny {
@@ -616,6 +629,11 @@ opacity: 0.4;
         
     }
 
+
+    .scrollArea {
+        min-height: 100vh;
+    }
+
     .slider {
         visibility: hidden;
     }
@@ -625,20 +643,12 @@ opacity: 0.4;
         
     }
     #hamburger-menu {
-        display: inline;
+        display: hidden;
     }
 
 
     a.caption {
         font-size: 20px;
-    }
-
-    .scrollArea {
-        /* border: 1px solid white; */
-        min-height: 100vh;
-        scroll-snap-stop: normal;
-        
-        
     }
 
     .resumeBoi {
@@ -685,17 +695,30 @@ opacity: 0.4;
     } 
 
     .header {
-        visibility: hidden;
+        visibility: visible;
     }
 }
 
+/* For everything phone related */
   
 @media screen and (max-width: 1000px) {
 
     html {
         scroll-snap-type: none;
+
     }
 
+    .p-mobile-info {
+        visibility: visible;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+
+   
+    #scroll1 {
+        height: 80vh;
+    }
 
     .werk {
         display: none;
@@ -704,7 +727,7 @@ opacity: 0.4;
     body {
         margin-right: 10%;
         margin-left: 10%;
-        overflow:auto;
+        overflow: auto;
     }
 
     .titleCont {
@@ -726,7 +749,7 @@ opacity: 0.4;
         height: 200px;
         width: 200px;
         float: left;
-        border: 2px solid white;
+        /* border: 2px solid white; */
         margin-left: 5%;
         margin-bottom: 5%;
         text-align: center;
@@ -734,22 +757,24 @@ opacity: 0.4;
     }
 
     .mobileWork {
-        border: 1px solid white;
+        /* border: 1px solid white; */
         height: fit-content;
         margin-left: 5%;
         margin-right: 5%;
     }
 
+
     #about-resume {
         height: fit-content;
-        outline: 1px solid blue;
+        visibility: visible;
+        
     }
 
     .workBlock-L {
         height: 200px;
         width: 200px;
         float: left;
-        border: 2px solid white;
+        border: 3px solid white;
         margin-left: 5%;
         margin-bottom: 5%;
         text-align: center;
@@ -762,7 +787,7 @@ opacity: 0.4;
         height: 200px;
         width: 200px;
         float: right;
-        border: 2px solid white;
+        border: 3px solid white;
         text-align: center;
         margin-bottom: 5%;
         margin-right: 5%;
@@ -809,6 +834,11 @@ opacity: 0.4;
         
     }
 
+    .button-group-mobile {
+        word-spacing: 25px;
+        visibility: visible;
+    }
+
     
 
     .proj-mobile-info {
@@ -817,6 +847,29 @@ opacity: 0.4;
         color: black;
         padding-top: 0;
 
+    }
+
+    .info-button {
+        background: none;
+        border: 1px solid white;
+        border-radius: 3px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        width: fit-content;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: fit-content;
+
+    }
+
+    .info-button a {
+        text-decoration: none;
+        color: white;
+    }
+    .info-button a:visited {
+        text-decoration: none;
     }
 
     .proj-button {
@@ -838,20 +891,24 @@ opacity: 0.4;
         text-decoration: none;
     }
 
+    #block8 {
+        background-color: rgb(200, 36, 222);
+    }
+
+    #block9 {
+        background-color: rgb(200, 36, 222);
+    }
+
     .ny {
-        
-        /* margin-top: 30%; */
-        /* margin-left: 10%; */
+
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 300;
         font-size: 5rem;
-        /* line-height: 80%; */
-        /* writing-mode:horizontal-tb;
-        transform: rotate(-90deg); */
         letter-spacing: 10px;
         text-align: center;
         
     }
+
 
     .navCont {
         display: none;
@@ -910,11 +967,6 @@ opacity: 0.4;
         font-size: 20px;
     }
 
-    .scrollArea {
-        /* border: 1px solid white; */
-        min-height: 100vh;
-    }
-
     #work-desktop {
         display: none;
     }
@@ -930,7 +982,7 @@ opacity: 0.4;
     }
 
     .PROJNAMEend {
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align:left
     }
 
@@ -943,6 +995,10 @@ opacity: 0.4;
 
     .header {
         visibility: hidden;
+    }
+
+    #sidebar-menu .matrix {
+        text-decoration:line-through;
     }
     
 }
