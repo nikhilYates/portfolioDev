@@ -4,6 +4,7 @@ html {
     background-color: black;
     scroll-snap-type: y proximity;
     scrollbar-gutter: initial;
+    
 
 }
 
@@ -391,31 +392,7 @@ footer {
     font-size: 20px;
 }
 
-/* .eduBox1 {
-    
-    text-align: left;
-    outline-color: black;
-    outline: 5px solid;
-    overflow: hidden;
-    background-color: black;
-    border-radius: 2px;
-}
-
-.eduBox2 {
-    margin-right: 16%;
-    border-radius: 2px;
-    background-color: black;
-    text-align: left;
-    outline-color: black;
-    outline: 5px solid;
-    overflow: hidden;
-    
-} */
-
-
-
 .resumeBoi {
-    
     height: 100%;
 }
 
@@ -500,10 +477,6 @@ footer {
   animation: cursor-blink 1.5s steps(2) infinite;
 }
 
-.contactInfo {
-    
-}
-
 .contactMe {
     
     text-decoration: none;
@@ -552,8 +525,8 @@ a.bstars:hover {
     position: fixed;
     background-color: white;
     z-index: 1;
-    top: 60px;
-    right: 5%;
+    top: 5%;
+    right: 10%;
     width: 30px;
     height: 30px;
     display: none;
@@ -577,12 +550,13 @@ a.bstars:hover {
     position: fixed;
     top: 0;
     right: -250px;
-    width: 50%;
+    width: 60%;
     height: 100%;
     background-color: rgb(200, 36, 222);
     transition: 0.3s;
     padding: 0px 10px;
     box-sizing: border-box;
+    text-align: left;
 }
 
 
@@ -599,21 +573,21 @@ line-height: 3rem;
 color: black;
 font-size: 1.3rem;
 text-decoration: none;
+
 }
 
 #hamburger-menu a:hover {
 color: #fff;
 }
 
-#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+/* #hamburger-input:checked + #hamburger-menu #sidebar-menu {
 visibility: visible;
 right: 0;
 }
 #hamburger-input:checked ~ .overlay{
 visibility: visible;
 opacity: 0.4;
-}
-  
+} */
 
 
 @media screen and (max-width: 1200px) {
@@ -713,18 +687,15 @@ opacity: 0.4;
     .header {
         visibility: hidden;
     }
-
-    
-
-
-
-    .hamburger-menue {
-        background-color: azure;
-    }
 }
 
   
 @media screen and (max-width: 1000px) {
+
+    html {
+        scroll-snap-type: none;
+    }
+
 
     .werk {
         display: none;
@@ -732,11 +703,13 @@ opacity: 0.4;
 
     body {
         margin-right: 10%;
+        margin-left: 10%;
+        overflow:auto;
     }
 
     .titleCont {
         text-align:center;
-        border: 1px solid pink;
+        /* border: 1px solid pink; */
         margin-top: 0;
         height: fit-content;
     }
@@ -767,6 +740,11 @@ opacity: 0.4;
         margin-right: 5%;
     }
 
+    #about-resume {
+        height: fit-content;
+        outline: 1px solid blue;
+    }
+
     .workBlock-L {
         height: 200px;
         width: 200px;
@@ -788,6 +766,8 @@ opacity: 0.4;
         text-align: center;
         margin-bottom: 5%;
         margin-right: 5%;
+        transition: 0.5s ease;
+        overflow: hidden;
         
     }
 
@@ -813,7 +793,23 @@ opacity: 0.4;
         width: 250px;
         height: 0;
         transition: .5s ease;
+        
     }
+
+    .workBlock-R .overlay-mobile {
+        /* position: absolute; */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color:white;
+        overflow: hidden;
+        width: 250px;
+        height: 0;
+        transition: .5s ease;
+        
+    }
+
+    
 
     .proj-mobile-info {
         font-family: Arial, Helvetica, sans-serif;
@@ -833,6 +829,15 @@ opacity: 0.4;
         
     }
 
+    .proj-button a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .proj-button a:visited {
+        text-decoration: none;
+    }
+
     .ny {
         
         /* margin-top: 30%; */
@@ -844,7 +849,7 @@ opacity: 0.4;
         /* writing-mode:horizontal-tb;
         transform: rotate(-90deg); */
         letter-spacing: 10px;
-        text-align: left;
+        text-align: center;
         
     }
 
@@ -908,10 +913,10 @@ opacity: 0.4;
     .scrollArea {
         /* border: 1px solid white; */
         min-height: 100vh;
-        
+    }
 
-        
-        
+    #work-desktop {
+        display: none;
     }
 
     .resumeBoi {
@@ -919,26 +924,9 @@ opacity: 0.4;
         
     }
 
-    
-
-    .row {
-        display:block;
-        
-    }
-
-    .row-end {
-        
-        height: 500px;
-        column-gap: 500px;
-        display: block;
-        padding: 0;
-    }
-
     .PROJNAME {
         font-size: 3.5rem;
         text-align: left;
-        
-        
     }
 
     .PROJNAMEend {
@@ -953,31 +941,8 @@ opacity: 0.4;
         
     }
 
-    a.PROJLINK:hover {
-        color: rgb(85, 85, 85);
-    }
-
-
-    .column {
-        flex-grow: 1;
-        text-align: left;
-        outline: 5px solid white;
-        overflow: hidden;
-        width: 100%;
-        /* row-gap: 100px; */
-        
-        
-    } 
-
     .header {
         visibility: hidden;
     }
-
     
-
-
-
-    .hamburger-menue {
-        background-color: azure;
-    }
 }

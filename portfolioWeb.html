@@ -31,7 +31,7 @@
             
                     
                     
-                <div class = "titleCont">
+                <div class = "titleCont" id="scroll1">
                     <h1 class = "ny"> nikhil yates </h1>
                 </div>
                 <div class="navCont">
@@ -43,25 +43,15 @@
                     </nav>
                     
                 </div>
-                <input type="checkbox" id="hamburger-input" class="hamburger-showerx">
+                <input type="checkbox" id="hamburger-input" class="hamburger-showerx" onclick="openNav()">
                         <label id="hamburger-menu" for="hamburger-input">
                         <nav id="sidebar-menu">
                             <ul>
-                                <li><a class = "resume" href="#work">WORK</a></li>
-                                <li><a class = "git" href="#about">ABOUT</a></li>
-                                <li><a class = "linkt" href="#contact">CONTACT</a></li>
-                                <li><a class="matrix" href="scorpion.html" target="_blank">scorpionLabz</a></li>
-                                <li><a class = "tiger" href="#top"><img src = "ny.svg" alt = "TIGER" style="height:125px;width:125px;align-items:left;"></a></li>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                
-                                <h4> close > </h4>
+                                <li><a class = "resume" href="#work-mobile" onclick="hideNav()">WORK</a></li>
+                                <li><a class = "git" href="#about" onclick="hideNav()">ABOUT</a></li>
+                                <li><a class = "linkt" href="#contact" onclick="hideNav()">CONTACT</a></li>
+                                <li><a class="matrix" href="scorpion.html" target="_blank" onclick="hideNav()">scorpionLabz</a></li>
+                                <li><a class = "tiger" href="#top" onclick="hideNav()"><img src = "ny.svg" alt = "TIGER" style="height:125px;width:125px;align-items:left;"></a></li>
                             </ul>
                     </nav>
                     </label>
@@ -75,29 +65,30 @@
                 <br>
 
                     
-                <div class="slider"></div>
-                <script>
-                    const circle = document.querySelector('.slider');
-                    const animationDuration = 1200; // in milliseconds
-                    // const sleepDuration = 500;
-                    let isMovingUp = true;
+                <div class="slider">
+                    <script>
+                        const circle = document.querySelector('.slider');
+                        const animationDuration = 1200; // in milliseconds
+                        // const sleepDuration = 500;
+                        let isMovingUp = true;
 
-                    function animateCircle() {
-                    const startPosition = isMovingUp ? '20%' : '50%';
-                    const endPosition = isMovingUp ? '10%' : '20%';
+                        function animateCircle() {
+                        const startPosition = isMovingUp ? '20%' : '50%';
+                        const endPosition = isMovingUp ? '10%' : '20%';
 
-                    circle.style.transition = `top ${animationDuration}ms ease-in-out`;
-                    circle.style.top = endPosition;
+                        circle.style.transition = `top ${animationDuration}ms ease-in-out`;
+                        circle.style.top = endPosition;
 
-                    setTimeout(() => {
-                        circle.style.transition = '';
-                        circle.style.top = startPosition;
-                        isMovingUp = !isMovingUp;
+                        setTimeout(() => {
+                            circle.style.transition = '';
+                            circle.style.top = startPosition;
+                            isMovingUp = !isMovingUp;
+                            animateCircle();
+                            }, animationDuration);
+                        }
                         animateCircle();
-                        }, animationDuration);
-                    }
-                    animateCircle();
-                </script>    
+                    </script>    
+                </div>
                 <br>
                 <br>
                 <br>
@@ -109,12 +100,12 @@
                 <br>
                 <br>
             </div>
-            <!-- New scroll Area for work-->
 
+            <!-- Scroll Area for work-->
 
             <!-- Seperate design for mobile -->
-
-            <div class="scrollArea-mobile">
+            <a name="work-mobile"></a>
+            <div class="scrollArea-mobile" id="scroll2">
                 <div class="mobileWork">
                     <div class="workBlock-L" id="first-work-block-mobile">
                         <div>
@@ -122,63 +113,95 @@
                         </div>
                         <div class = "overlay-mobile" id="mobile-overlay">
                             <p class="proj-mobile-info">Blockchain principles. Node.js, JSON</p>
-                            <button class="proj-button">Github</button>
+                            <button class="proj-button"><a href="https://github.com/nikhilYates/mbagz-chain" target="_blank">Github</a></button>
                         </div>
                     </div>
-                    <div class="workBlock-R">
-                        <h1 class="mobile-work-title">DBMS
-                        </h1>
+
+                    <div class="workBlock-R" id="block2" onclick="infoSlider('block2', 'mobile-overlay2' )">
+                        <div>
+                            <h1 class="mobile-work-title">DBMS</h1>
+                        </div>
+                        <div class = "overlay-mobile" id="mobile-overlay2">
+                            <p class="proj-mobile-info">RDBMS for construction companies</p>
+                            <button class="proj-button"><a href="https://github.com/nikhilYates/inventoryTracker" target="_blank">Github</a></button>
+                        </div>
                     </div>
+
                     <div class="workBlock-L" id="block3">
                         <div>
                             <h1 class="mobile-work-title" id="crypto" onclick="infoSlider('block3', 'mobile-overlay3')">DATA</h1>
                         </div>
                         <div class = "overlay-mobile" id="mobile-overlay3">
-                            <p class="proj-mobile-info">Blockchain principles. Node.js, JSON</p>
-                            <button class="proj-button">Github</button>
+                            <p class="proj-mobile-info">Regression, predictive analysis...</p>
+
+                            <button class="proj-button"><a href="https://github.com/nikhilYates/dataScience" target="_blank">Github</a></button>
                         </div>
                     </div>
-                    <div class="workBlock-R">
-                        <h1 class="mobile-work-title">PAPER
-                        </h1>
+
+                    <div class="workBlock-R" id="block4" onclick="infoSlider('block4', 'mobile-overlay4')">
+                        <div>
+                            <h1 class="mobile-work-title">PAPER</h1>
+                        </div>
+                        <div class = "overlay-mobile" id="mobile-overlay4">
+                            <p class="proj-mobile-info">Essays on groundbreaking tech</p>
+                            
+                            <button class="proj-button"><a href="https://github.com/nikhilYates/papers" target="_blank">Github</a></button>
+                        </div>
                     </div>
+
                     <div class="workBlock-L" id="block5">
                         <div>
                             <h1 class="mobile-work-title" id="crypto" onclick="infoSlider('block5', 'mobile-overlay5')">MCU</h1>
                         </div>
                         <div class = "overlay-mobile" id="mobile-overlay5">
-                            <p class="proj-mobile-info">Blockchain principles. Node.js, JSON</p>
-                            <button class="proj-button">Github</button>
+                            <p class="proj-mobile-info">DC motor control with the HCS12</p>
+                            <!-- button linke -->
+                            <button class="proj-button"><a href="https://github.com/nikhilYates/mcuMotor" target="_blank">Github</a></button>
                         </div>
                     </div>
-                    <div class="workBlock-R">
-                        <h1 class="mobile-work-title">SECU
-                            RITY
-                        </h1>
+
+                    <div class="workBlock-R" id="block6" onclick="infoSlider('block6', 'mobile-overlay6')">
+                        <div>
+                            <h1 class="mobile-work-title">CYBER</h1>
+                        </div>
+                        <div class = "overlay-mobile" id="mobile-overlay6">
+                            <p class="proj-mobile-info">Cyber security algos, concepts...</p>
+                            <!-- button linke -->
+                            <button class="proj-button"><a href="https://github.com/nikhilYates/Useful-Tools/tree/main/cryptography" target="_blank">Github</a></button>
+                        </div>
                     </div>
+
                     <div class="workBlock-L" id="block7">
                         <div>
                             <h1 class="mobile-work-title" id="crypto" onclick="infoSlider('block7', 'mobile-overlay7')">WEB</h1>
                         </div>
                         <div class = "overlay-mobile" id="mobile-overlay7">
-                            <p class="proj-mobile-info">Blockchain principles. Node.js, JSON</p>
-                            <button class="proj-button">Github</button>
+                            <p class="proj-mobile-info">Web scraping & cross-platform app</p>
+                            <!-- button linke -->
+                            <button class="proj-button"><a href="https://github.com/nikhilYates/Useful-Tools" target="_blank">Github</a></button>
                         </div>
                     </div>
-                    <div class="workBlock-R">
-                        <h1 class="mobile-work-title">ALLER
-                            GEN
-                        </h1>
+
+                    <div class="workBlock-R" id="block8" onclick="infoSlider('block8', 'mobile-overlay8')">
+                        <div>
+                            <h1 class="mobile-work-title">ALRGN</h1>
+                        </div>
+                        <div class = "overlay-mobile" id="mobile-overlay8">
+                            <p class="proj-mobile-info">App for a leading restaurant brand</p>
+                            <p class="proj-mobile-info">More info coming soon...</p>
+                        </div>
                     </div>
+
                     <div class="workBlock-L" id="block9">
                         <div>
                             <h1 class="mobile-work-title" id="crypto" onclick="infoSlider('block9', 'mobile-overlay9')">LLMs</h1>
                         </div>
                         <div class = "overlay-mobile" id="mobile-overlay9">
-                            <p class="proj-mobile-info">Blockchain principles. Node.js, JSON</p>
-                            <button class="proj-button">Github</button>
+                            <p class="proj-mobile-info">LLMs based test case generation</p>
+                            <p class="proj-mobile-info">In collaboration with York U</p>
                         </div>
                     </div>
+
                     <div class="workBlock-R">
                         <h1 class="mobile-work-title">MORE
                             SOON
@@ -186,12 +209,9 @@
                     </div>
                 </div>
             </div>
-
-
-                    
-
-                    <!-- Design for desktop -->
-            <div class = "scrollArea"> 
+            
+            <!-- Design for desktop -->
+            <div class = "scrollArea" id="work-desktop"> 
                 <br>
                 <br>
                 <a name="work"></a>
@@ -288,7 +308,7 @@
             <br>
             <br>
 
-            <div class="scrollArea"> 
+            <div class="scrollArea" id="about-resume"> 
                 
                 <a name="about"></a>
                     
@@ -335,7 +355,7 @@
             </div>
             <!-- New scroll Area for contact-->
 
-            <div class="scrollArea">
+            <div class="scrollArea" id="scroll4">
                 
                 <br>
             
@@ -349,6 +369,9 @@
                 <br>
                 <br>
                 <div class="PROJNAMEend">SCORPIONLABZ LAUNCH FALL 2023</div>
+                <br>
+                <br>
+                <br>
                 <br>
                 <br>
                 <br>
