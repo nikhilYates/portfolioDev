@@ -178,10 +178,6 @@ a.PROJLINK:hover {
     color: rgb(186, 186, 186);
 }
 
-.topnav {
-    
-}
-
 
 .CONTACT {
 
@@ -212,12 +208,29 @@ a.PROJLINK:hover {
    
 }
 
-.navDiv {
-    margin-left: 30%;
-    margin-right: 30%;
-    justify-content: center;
-    /* border: 3px solid white; */
+.navCont {
+    align-items: center;
+    text-align: center;
 }
+
+.nav {
+    
+    text-align: center;
+    word-spacing: 50px;
+}
+
+.nav a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 2.1rem;
+    text-decoration: none;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.nav a:hover {
+    opacity: 80%;
+}
+
 
 
 .mainCol {
@@ -231,18 +244,9 @@ a.PROJLINK:hover {
     /* border: 1px solid white; */
 }
 
-#Navigation {
 
-    font-size: 2rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 2px; 
-    display:flex;
-
-}
-
-#Navigation a {
-    width: 100px;
-    
+.scrollArea-mobile {
+    display: none ;
 }
 
 .tiger {
@@ -258,50 +262,6 @@ a.PROJLINK:hover {
 
 
 
-
-/* #Navigation a.linkt {
-    float: left;
-}
-
-#Navigation a.matrix {
-    float: right;
-    
-    
-}
-
-
-#Navigation a.resume {
-    float: right;
-}
-
-#Navigation a.git {
-    float: right;
-} */
-
-/* #Navigation-nav {
-    margin-left: 0px;
-    margin-right: 30px;  
-    
-} */
-
-#Navigation a:link {
-
-    text-decoration: none;
-    color: rgb(126, 126, 126);
-    
-}
-
-#Navigation a:active {
-    color: rgb(255, 255, 255);
-}
-
-#Navigation a:visited {
-    color: rgb(126, 126, 126);
-}
-
-#Navigation a:hover {
-    color:#fff;
-}
 
 /*
     Styling for the slideshow projects/experience
@@ -334,7 +294,7 @@ a.PROJLINK:hover {
     
 }
 
-/* .column .overlay {
+ .column .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -344,12 +304,12 @@ a.PROJLINK:hover {
     width: 100%;
     height: 0;
     transition: .5s ease;
-} */
+} 
 
-/* .column:hover .overlay {
+ .column:hover .overlay {
     height: 100%;
 
-} */
+} 
 
 .ovPic {
     opacity: 15%;
@@ -361,7 +321,7 @@ a.PROJLINK:hover {
 a.caption {
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2.5vw;
+    font-size: 1.2rem;
     text-align: center;
     letter-spacing: 2px;
     position: absolute;
@@ -374,7 +334,7 @@ a.caption {
     flex: auto;
 }
 
-/* .contact .overlay {
+ .contact .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -384,16 +344,16 @@ a.caption {
     width: 100%;
     height: 0;
     transition: .5s ease;
-} */
+} 
 
-/* .contact:hover .overlay {
+ .contact:hover .overlay {
     height: 100%;
 }
 
 a.caption:hover {
     opacity: 50%;
     
-} */
+} 
 
 a.caption:visited {
     color: white;
@@ -661,25 +621,6 @@ opacity: 0.4;
     .titleCont {
         text-align: center;
         background:none;
-        /* linear-gradient(to right, rgb(255, 255, 255) 4px, transparent 4px) 0 0,
-        linear-gradient(to right, rgb(255, 255, 255) 4px, transparent 4px) 0 100%,
-        linear-gradient(to left, rgb(255, 255, 255) 4px, transparent 4px) 100% 0,
-        /* linear-gradient(to left, rgb(255, 255, 255) 4px, transparent 4px) 100% 100%, */
-        /* linear-gradient(to bottom, rgb(255, 255, 255) 4px, transparent 4px) 0 0, */
-        /* linear-gradient(to bottom, rgb(255, 255, 255) 4px, transparent 4px) 100% 0,
-        linear-gradient(to top, rgb(255, 255, 255) 4px, transparent 4px) 0 100%,
-        linear-gradient(to top, rgb(255, 255, 255) 4px, transparent 4px) 0 100%; */
-    
-    
-        /* box-shadow: 
-            0 0 10px 5px #48abe0,
-            0 0 20px 7px #ebecca,
-            0 0 25px 20px #8a2be2,
-            0 0 30px 25px #ff1493; */
-        
-    
-      /* background-repeat: no-repeat;
-      background-size: 5% 10%; */ 
       margin-bottom: 5%;
     }
 
@@ -687,12 +628,15 @@ opacity: 0.4;
 
 @media screen and (max-width: 1200px) {
 
+    body {
+        border: 1px solid white;
+    }
+
     .ny {
         
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 200;
         font-size: 12rem;
-        
         line-height: 80%;
         padding-bottom: 30px;
         
@@ -782,34 +726,138 @@ opacity: 0.4;
   
 @media screen and (max-width: 1000px) {
 
+    .werk {
+        display: none;
+    }
+
     body {
-        margin-right: 17%;
+        margin-right: 10%;
     }
 
     .titleCont {
-        text-align: left;
+        text-align:center;
+        border: 1px solid pink;
+        margin-top: 0;
+        height: fit-content;
     }
 
     .spacer {
         visibility: hidden;
     }
 
-    .ny {
-        
-        margin-top: 50%;
-        margin-left: 10%;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 200;
-        font-size: 5rem;
-        line-height: 80%;
-        /* writing-mode:horizontal-tb;
-        transform: rotate(-90deg); */
-        letter-spacing: 20px;
+    .scrollArea-mobile {
+        display: flex;
+    }
+
+    #first-work-block-mobile {
+        height: 200px;
+        width: 200px;
+        float: left;
+        border: 2px solid white;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .mobileWork {
+        border: 1px solid white;
+        height: fit-content;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .workBlock-L {
+        height: 200px;
+        width: 200px;
+        float: left;
+        border: 2px solid white;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+        overflow: hidden;
+        transition: 0.5s ease;
+    
+    }
+
+    .workBlock-R {
+        height: 200px;
+        width: 200px;
+        float: right;
+        border: 2px solid white;
+        text-align: center;
+        margin-bottom: 5%;
+        margin-right: 5%;
         
     }
 
+    .mobile-work-title {
+        
+        
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 3rem;
+        font-weight: 100;
+    }
+
+
+    /* Overlay for mobile */
+
+    .workBlock-L .overlay-mobile {
+        /* position: absolute; */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color:white;
+        overflow: hidden;
+        width: 250px;
+        height: 0;
+        transition: .5s ease;
+    }
+
+    .proj-mobile-info {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: black;
+        padding-top: 0;
+
+    }
+
+    .proj-button {
+        background: none;
+        border: 1px solid black;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 90px;
+        padding: 2px;
+        height: 30px;
+        
+    }
+
+    .ny {
+        
+        /* margin-top: 30%; */
+        /* margin-left: 10%; */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 300;
+        font-size: 5rem;
+        /* line-height: 80%; */
+        /* writing-mode:horizontal-tb;
+        transform: rotate(-90deg); */
+        letter-spacing: 10px;
+        text-align: left;
+        
+    }
+
+    .navCont {
+        display: none;
+    }
+
+    .menuWink {
+        display: none;
+    }
+
     .slider {
-        margin-top: 80%;
+        margin-top: 100%;
         visibility: visible;
         width: 50px;
         height: 50px;
@@ -860,6 +908,7 @@ opacity: 0.4;
     .scrollArea {
         /* border: 1px solid white; */
         min-height: 100vh;
+        
 
         
         

@@ -18,269 +18,347 @@
                 <br>
                 <br>
                 <header class="header">
-                    <a class = "tiger" href="#top"><img src = "nyWhite.svg" alt = "TIGER" style="height:10%;width:10%;"></a>
-                    <a class = "slabz" href="scorpion.html" target="_blank"><img src="scorpionLabz/sLabz.png" alt="zLABZ" style="height: 10%;width: 10%;float: right;margin-top: -5vh"></a>
+                    <div class="desktop">
+                        <a class = "tiger" href="#top"><img src = "nyWhite.svg" alt = "TIGER" style="height:10%;width:10%;"></a>
+                        <a class = "slabz" href="scorpion.html" target="_blank"><img src="scorpionLabz/sLabz.png" alt="zLABZ" style="height: 10%;width: 10%;float: right;margin-top: -5vh"></a>
+                    </div>
+                    <div class="mobile">
+                        
+                    </div>
                      <!-- <a class="bstars" href="https://www.beatstars.com/nikhxly" target="blank"><img src="whiteTiger.svg" alt="BEATSTARS" style="height:100px;width:100px;"></a> -->
                 </header>
                     
-                <input type="checkbox" id="hamburger-input" class="hamburger-showerx">
-                <label id="hamburger-menu" for="hamburger-input">
-                    <nav id="sidebar-menu">
-                        <ul>
-                            <li><a class = "resume" href="#work">WORK</a></li>
-                            <li><a class = "git" href="#about">ABOUT</a></li>
-                            <li><a class = "linkt" href="#contact">CONTACT</a></li>
-                            <li><a class="matrix" href="#contact">scorpionLabz</a></li>
-                            <li><a class = "tiger" href="#top"><img src = "ny.svg" alt = "TIGER" style="height:125px;width:125px;align-items:left;"></a></li>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            
-                            <h4> close > </h4>
-                        </ul>
-                    </nav>
-                </label>
             
                     
                     
-                    <div class = "titleCont">
-                        <h1 class = "ny"> nikhil yates </h1>
-                    </div>
-                        
-
-                        <h3 class="menuWink">menu(less)</h3>
-                    </div>
-
-
-
-
-
-
-
+                <div class = "titleCont">
+                    <h1 class = "ny"> nikhil yates </h1>
+                </div>
+                <div class="navCont">
                     
-                    <div class="slider"></div>
-                    <script>
-                        const circle = document.querySelector('.slider');
-                        const animationDuration = 1200; // in milliseconds
-                        // const sleepDuration = 500;
-                        let isMovingUp = true;
-
-                        function animateCircle() {
-                        const startPosition = isMovingUp ? '20%' : '50%';
-                        const endPosition = isMovingUp ? '10%' : '20%';
-
-                        circle.style.transition = `top ${animationDuration}ms ease-in-out`;
-                        circle.style.top = endPosition;
-
-                        setTimeout(() => {
-                            circle.style.transition = '';
-                            circle.style.top = startPosition;
-                            isMovingUp = !isMovingUp;
-                            animateCircle();
-                            }, animationDuration);
-                        }
-                        animateCircle();
-                    </script>
+                    <nav class="nav">
+                        <a href="#work">work.</a>
+                        <a href="#about">about.</a>
+                        <a href="#contact">contact.</a>
+                    </nav>
                     
-                        
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                        
-                        
-                        
-                        
-                        
-                        <!-- <p class = "edu"> Honours BSc. Computer Science (2024)</p>
-                        
-                        
-                            <p class = "edu"> Bergeron Entrepreneur in Science and Technology (BEST) Candidate 2024</p>
-                        
-                    
-                        </div> -->
-                    
-                    
+                </div>
+                <input type="checkbox" id="hamburger-input" class="hamburger-showerx">
+                        <label id="hamburger-menu" for="hamburger-input">
+                        <nav id="sidebar-menu">
+                            <ul>
+                                <li><a class = "resume" href="#work">WORK</a></li>
+                                <li><a class = "git" href="#about">ABOUT</a></li>
+                                <li><a class = "linkt" href="#contact">CONTACT</a></li>
+                                <li><a class="matrix" href="scorpion.html" target="_blank">scorpionLabz</a></li>
+                                <li><a class = "tiger" href="#top"><img src = "ny.svg" alt = "TIGER" style="height:125px;width:125px;align-items:left;"></a></li>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                
+                                <h4> close > </h4>
+                            </ul>
+                    </nav>
+                    </label>
                 
-                    <!--Commenting this jus a way to make the screen load -->
 
+
+
+
+                <br>
+                <br>
+                <br>
+
+                    
+                <div class="slider"></div>
+                <script>
+                    const circle = document.querySelector('.slider');
+                    const animationDuration = 1200; // in milliseconds
+                    // const sleepDuration = 500;
+                    let isMovingUp = true;
+
+                    function animateCircle() {
+                    const startPosition = isMovingUp ? '20%' : '50%';
+                    const endPosition = isMovingUp ? '10%' : '20%';
+
+                    circle.style.transition = `top ${animationDuration}ms ease-in-out`;
+                    circle.style.top = endPosition;
+
+                    setTimeout(() => {
+                        circle.style.transition = '';
+                        circle.style.top = startPosition;
+                        isMovingUp = !isMovingUp;
+                        animateCircle();
+                        }, animationDuration);
+                    }
+                    animateCircle();
+                </script>    
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
             </div>
-                    <!-- New scroll Area for work-->
+            <!-- New scroll Area for work-->
+
+
+            <!-- Seperate design for mobile -->
+
+            <div class="scrollArea-mobile">
+                <div class="mobileWork">
+                    <div class="workBlock-L" id="first-work-block-mobile">
+                        <div>
+                            <h1 class="mobile-work-title" id="crypto" onclick="infoSlider('first-work-block-mobile', 'mobile-overlay')">CRYPTO</h1>
+                        </div>
+                        <div class = "overlay-mobile" id="mobile-overlay">
+                            <p class="proj-mobile-info">Blockchain principles. Node.js, JSON</p>
+                            <button class="proj-button">Github</button>
+                        </div>
+                    </div>
+                    <div class="workBlock-R">
+                        <h1 class="mobile-work-title">DBMS
+                        </h1>
+                    </div>
+                    <div class="workBlock-L" id="block3">
+                        <div>
+                            <h1 class="mobile-work-title" id="crypto" onclick="infoSlider('block3', 'mobile-overlay3')">DATA</h1>
+                        </div>
+                        <div class = "overlay-mobile" id="mobile-overlay3">
+                            <p class="proj-mobile-info">Blockchain principles. Node.js, JSON</p>
+                            <button class="proj-button">Github</button>
+                        </div>
+                    </div>
+                    <div class="workBlock-R">
+                        <h1 class="mobile-work-title">PAPER
+                        </h1>
+                    </div>
+                    <div class="workBlock-L" id="block5">
+                        <div>
+                            <h1 class="mobile-work-title" id="crypto" onclick="infoSlider('block5', 'mobile-overlay5')">MCU</h1>
+                        </div>
+                        <div class = "overlay-mobile" id="mobile-overlay5">
+                            <p class="proj-mobile-info">Blockchain principles. Node.js, JSON</p>
+                            <button class="proj-button">Github</button>
+                        </div>
+                    </div>
+                    <div class="workBlock-R">
+                        <h1 class="mobile-work-title">SECU
+                            RITY
+                        </h1>
+                    </div>
+                    <div class="workBlock-L" id="block7">
+                        <div>
+                            <h1 class="mobile-work-title" id="crypto" onclick="infoSlider('block7', 'mobile-overlay7')">WEB</h1>
+                        </div>
+                        <div class = "overlay-mobile" id="mobile-overlay7">
+                            <p class="proj-mobile-info">Blockchain principles. Node.js, JSON</p>
+                            <button class="proj-button">Github</button>
+                        </div>
+                    </div>
+                    <div class="workBlock-R">
+                        <h1 class="mobile-work-title">ALLER
+                            GEN
+                        </h1>
+                    </div>
+                    <div class="workBlock-L" id="block9">
+                        <div>
+                            <h1 class="mobile-work-title" id="crypto" onclick="infoSlider('block9', 'mobile-overlay9')">LLMs</h1>
+                        </div>
+                        <div class = "overlay-mobile" id="mobile-overlay9">
+                            <p class="proj-mobile-info">Blockchain principles. Node.js, JSON</p>
+                            <button class="proj-button">Github</button>
+                        </div>
+                    </div>
+                    <div class="workBlock-R">
+                        <h1 class="mobile-work-title">MORE
+                            SOON
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+
                     
-                    <div class = "scrollArea"> 
-                        <br>
-                        <br>
-                        <a name="work"></a>
-                        <div class="werk">
-                            <div class="row">
-                    
-                                <div class="column">
-                                    <div class="PROJNAME"><a class="PROJLINK" href="https://github.com/nikhilYates/mbagz-chain" target="_blank">CRY
-                                        PTO
-                                    </a></div>
-                                    <!-- <div class = "overlay">
-                                        <img src="nyWhite.svg" class="ovPic">
-                                        <a class="caption" href="https://github.com/nikhilYates/mbagz-chain" target="_blank"> MBAGZ <br> (BLOCKCHAIN PROJECT) </a>
-                                    </div> -->
-                                </div>
-                                <div class="column">
-                                    <div class="PROJNAME"><a class= "PROJLINK" href="https://github.com/nikhilYates/inventoryTracker" target="_blank">DATA
-                                        BASE</a></div>
-                                    <!-- <div class = "overlay">
-                                        <img src="nyWhite.svg" class = "ovPic">
-                                        <a class="caption" href="https://github.com/nikhilYates/inventoryTracker" target="_blank"> INVENTORY MANAGEMENT <br> (DATABASE PROJECT) </a>
-                                    </div> -->
-                                </div>
-                                <div class="column">
-                                    <div class="PROJNAME"><a class="PROJLINK" href="https://github.com/nikhilYates/dataScience" target="_blank">ANA
-                                        LYTICS
-                                        </a></div>
-                                    <!-- <div class = "overlay">
-                                        <img src="nyWhite.svg" class = "ovPic">
-                                        <a class="caption" href="https://github.com/nikhilYates/dataScience" target="_blank"> DATA SCIENCE <br> (PYTHON COURSE) </a>
-                                    </div> -->
-                                </div>
+
+                    <!-- Design for desktop -->
+            <div class = "scrollArea"> 
+                <br>
+                <br>
+                <a name="work"></a>
+                <div class="werk">
+                    <div class="row">
+            
+                        <div class="column">
+                            <div class="PROJNAME"><a class="PROJLINK" href="https://github.com/nikhilYates/mbagz-chain" target="_blank">CRY
+                                PTO
+                            </a></div>
+                            <div class = "overlay">
+                                <img src="nyWhite.svg" class="ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/mbagz-chain" target="_blank"> Everything to do with blockchain development. NodeJs, JSON, for back-end and server communication.</a>
                             </div>
-                            <br>
-                            <!--New ROW-->
-                            <div class="row">
-                    
-                                <div class="column">
-                                    <div class="PROJNAME"><a class="PROJLINK" href="https://github.com/nikhilYates/papers" target="_blank">WRITING
-                                    </a></div>
-                                    <!-- <div class = "overlay">
-                                        <img src="nyWhite.svg" class="ovPic">
-                                        <a class="caption" href="https://github.com/nikhilYates/papers" target="_blank"> WRITING <br> (PAPERS ON TECH) </a>
-                                    </div> -->
-                                </div>
-                                <div class="column">
-                                    <div class = "PROJNAME"><a class="PROJLINK" href="https://github.com/nikhilYates/mcuMotor" target="_blank">MCU
-                                        MOTOR
-                                    </a></div>
-                                    <!-- <div class = "overlay">
-                                        <img src="nyWhite.svg" class = "ovPic">
-                                        <a class="caption" href="https://github.com/nikhilYates/mcuMotor" target="_blank"> MCU MOTOR <br> (EMBEDDED SYSTEMS) </a>
-                                    </div> -->
-                                </div>
+                        </div>
+                        <div class="column">
+                            <div class="PROJNAME"><a class= "PROJLINK" href="https://github.com/nikhilYates/inventoryTracker" target="_blank">DATA
+                                BASE</a></div>
+                            <div class = "overlay">
+                                <img src="nyWhite.svg" class = "ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/inventoryTracker" target="_blank"> An inventory management solution for a general contracting and kitchen and bath company. RDBMS best practices.</a>
                             </div>
-                            <br>
-                            <!--New ROW-->
-                            <div class="row">
-                    
-                                <div class="column">
-                                    <div class="PROJNAME"><a class="PROJLINK" href="https://github.com/nikhilYates/Useful-Tools/tree/main/cryptography" target="_blank">SECU
-                                        RITY
-                                    </a></div>
-                                    <!-- <div class="overlay">
-                                        <img src="nyWhite.svg" class = "ovPic">
-                                        <a class="caption" href="https://github.com/nikhilYates/Useful-Tools/tree/main/cryptography" target="_blank">SECURITY<br> (CRYPTOGRAPHY WORK)</a>
-                                    </div> -->
-                                </div>
-                                <div class="column">
-                                    <div class="PROJNAME"><a class="PROJLINK" href="https://github.com/nikhilYates/Useful-Tools" target="_blank">WEB
-                                        SCRAPING
-                                    </a></div>
-                                    <!-- <div class="overlay">
-                                        <img src="nyWhite.svg" class = "ovPic">
-                                        <a class="caption" href="https://github.com/nikhilYates/Useful-Tools" target="_blank">WEB SCRAPING<br> (PYTHON SCRIPTS)</a>
-                                    </div> -->
-                                </div>
-                                <div class="column">
-                                    <div class = "PROJNAME">MORE
-                                        SOON
-                                    </div>
-                                    
-                                </div>
+                        </div>
+                        <div class="column">
+                            <div class="PROJNAME"><a class="PROJLINK" href="https://github.com/nikhilYates/dataScience" target="_blank">ANA
+                                LYTICS
+                                </a></div>
+                            <div class = "overlay">
+                                <img src="nyWhite.svg" class = "ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/dataScience" target="_blank"> Project-oriented Udemy course that includes all fundemental aspects of data science. Python, Jupyter Notebook, regression...</a>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- New scroll Area for about-->
                     <br>
+                    <!--New ROW-->
+                    <div class="row">
+            
+                        <div class="column">
+                            <div class="PROJNAME"><a class="PROJLINK" href="https://github.com/nikhilYates/papers" target="_blank">WRITING
+                            </a></div>
+                            <div class = "overlay">
+                                <img src="nyWhite.svg" class="ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/papers" target="_blank"> Papers I've written on noteworthy, breakthrough technology</a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class = "PROJNAME"><a class="PROJLINK" href="https://github.com/nikhilYates/mcuMotor" target="_blank">MCU
+                                MOTOR
+                            </a></div>
+                            <div class = "overlay">
+                                <img src="nyWhite.svg" class = "ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/mcuMotor" target="_blank"> Embedded systems culminating project - controlling a DC motor using the HCS12 MCU</a>
+                            </div>
+                        </div>
+                    </div>
                     <br>
-                    <br>
-
-                    <div class="scrollArea"> 
-                        
-                        <a name="about"></a>
+                    <!--New ROW-->
+                    <div class="row">
+            
+                        <div class="column">
+                            <div class="PROJNAME"><a class="PROJLINK" href="https://github.com/nikhilYates/Useful-Tools/tree/main/cryptography" target="_blank">SECU
+                                RITY
+                            </a></div>
+                            <div class="overlay">
+                                <img src="nyWhite.svg" class = "ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/Useful-Tools/tree/main/cryptography" target="_blank">Some of the cryptography work I've done (algorithms, problems...)</a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="PROJNAME"><a class="PROJLINK" href="https://github.com/nikhilYates/Useful-Tools" target="_blank">WEB
+                                SCRAPING
+                            </a></div>
+                            <div class="overlay">
+                                <img src="nyWhite.svg" class = "ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/Useful-Tools" target="_blank">Web scraping work I've done, including a cross-platform app for a private equity firm</a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class = "PROJNAME">MORE
+                                SOON
+                            </div>
+                            <div class="overlay">
+                                <img src="nyWhite.svg" class = "ovPic">
+                                <a class="caption" href="https://github.com/nikhilYates/Useful-Tools" target="_blank">Check out my github<br>(click me)</a>
+                            </div>
                             
-                            <div class="resumeBoi">
-
-                                <div class="resumeBruh">
-                                    <br>
-                                    <h3 class="resume-header">education[][] <span class="resumeBrackets"> = {</span></h3>
-                                        <h3 class="resume-info-curr">{York University, HBSc Computer Science, (2020-2024)},</h3>
-                                        <h3 class="resume-info-curr">{Lassonde School of Engineering, Bergeron Entrepreneurs in Science and Technology (BEST), (2020-2024)}</h3>
-                                    <h3 class="resumeBr">};</h3>
-
-
-                                    <h3 class="resume-header">workExperience[][] <span class="resumeBrackets"> = {</span></h3>
-                                        <h3 class="resume-info">{Omira Group, IT Consultant, (2021-2023)},</h3>
-                                        <h3 class="resume-info">{ESSENCE CubeSat Mission, Software Developer, (2021-2022)},</h3>
-                                        <h3 class="resume-info">{Define Capital Inc., Private Equity Analyst, (2023-)},</h3>
-                                        <h3 class="resume-info-curr">{ScorpionLabz, CEO, (2023-Present)</h3>
-                                    <h3 class="resumeBr">};</h3>
-
-                                    <h3 class="resume-header">skillSet[][] <span class="resumeBrackets"> = {</span></h3>
-                                        <h3 class="resume-info">{C, Java, Node.js, SQL, python, HTML, CSS, javascript, Bash, jQuery, HCS12 ASM},</h3>
-                                        <h3 class="resume-info">{Operating Systems, Embedded Systems, Blockchain, RDBMS, Kali Linux},</h3>
-                                        <h3 class="resume-info">{mySQL Workbench, Jupyter Lab, Spyder, AWS, Docker, MC9S12DG256CVPE}</h3>
-                                        <h3 class="resume-info">{Microsoft Suite, Market Analysis, Financial Accounting, Financial Modelling and Valuation}</h3>
-                                    <h3 class="resumeBr">};</h3>
-
-                                    <br>
-                                </div>
-                            </div>
                         </div>
-                    
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <!-- New scroll Area for contact-->
-
-                    <div class="scrollArea">
-                        
-                        <br>
-                    
-                        <a name="contact"></a>
-                        
-                        <div class="contactInfo">
-                            <h2 class="contactMe">LinkedIn <span><br><a class="contactMe-Info" href="https://www.linkedin.com/in/nikhilyates/" target="_blank">nikhilyates</a></span></h2>
-                            <h2 class="contactMe">email <span><br><a class="contactMe-email">nikhilyates@proton.me</a></aNikhil></span></h2>
-                            <h2 class="contactMe">Github <span><a class="contactMe-Info" href="https://github.com/nikhilYates" target="_blank"><br>nikhilGit</a></aNikhil></span></h2>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="PROJNAMEend">SCORPIONLABZ LAUNCH FALL 2023</div>
-                        <br>
-                        <br>
-                        <br>
-                        <h3 class="credits">nikhil yates 2023 ©</h3>
-                        
-                        
-
-                        
-                        
                     </div>
+                </div>
+            </div>
+            
+            <!-- New scroll Area for about-->
+            <br>
+            <br>
+            <br>
+
+            <div class="scrollArea"> 
+                
+                <a name="about"></a>
+                    
+                    <div class="resumeBoi">
+
+                        <div class="resumeBruh">
+                            <br>
+                            <h3 class="resume-header">education[][] <span class="resumeBrackets"> = {</span></h3>
+                                <h3 class="resume-info-curr">{York University, HBSc Computer Science, (2020-2024)},</h3>
+                                <h3 class="resume-info-curr">{Lassonde School of Engineering, Bergeron Entrepreneurs in Science and Technology (BEST), (2020-2024)}</h3>
+                            <h3 class="resumeBr">};</h3>
+
+
+                            <h3 class="resume-header">workExperience[][] <span class="resumeBrackets"> = {</span></h3>
+                                <h3 class="resume-info">{Omira Group, IT Consultant, (2021-2023)},</h3>
+                                <h3 class="resume-info">{ESSENCE CubeSat Mission, Software Developer, (2021-2022)},</h3>
+                                <h3 class="resume-info">{Define Capital Inc., Private Equity Analyst, (2023-)},</h3>
+                                <h3 class="resume-info-curr">{ScorpionLabz, CEO, (2023-Present)</h3>
+                            <h3 class="resumeBr">};</h3>
+
+                            <h3 class="resume-header">skillSet[][] <span class="resumeBrackets"> = {</span></h3>
+                                <h3 class="resume-info">{C, Java, Node.js, SQL, python, HTML, CSS, javascript, Bash, jQuery, HCS12 ASM},</h3>
+                                <h3 class="resume-info">{Operating Systems, Embedded Systems, Blockchain, RDBMS, Kali Linux},</h3>
+                                <h3 class="resume-info">{mySQL Workbench, Jupyter Lab, Spyder, AWS, Docker, MC9S12DG256CVPE}</h3>
+                                <h3 class="resume-info">{Microsoft Suite, Market Analysis, Financial Accounting, Financial Modelling and Valuation}</h3>
+                            <h3 class="resumeBr">};</h3>
+
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!-- New scroll Area for contact-->
+
+            <div class="scrollArea">
+                
+                <br>
+            
+                <a name="contact"></a>
+                
+                <div class="contactInfo">
+                    <h2 class="contactMe">LinkedIn <span><br><a class="contactMe-Info" href="https://www.linkedin.com/in/nikhilyates/" target="_blank">nikhilyates</a></span></h2>
+                    <h2 class="contactMe">email <span><br><a class="contactMe-email">nikhilyates@proton.me</a></aNikhil></span></h2>
+                    <h2 class="contactMe">Github <span><a class="contactMe-Info" href="https://github.com/nikhilYates" target="_blank"><br>nikhilGit</a></aNikhil></span></h2>
+                </div>
+                <br>
+                <br>
+                <div class="PROJNAMEend">SCORPIONLABZ LAUNCH FALL 2023</div>
+                <br>
+                <br>
+                <br>
+                <h3 class="credits">nikhil yates 2023 ©</h3>
+                
+                
+
+                
+                
+            </div>
         </div>
         
     </body>
