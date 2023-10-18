@@ -13,7 +13,7 @@ flag = 0;
 function infoSlider(id, overlayId) {
 
     if (flag === 0) {
-        document.getElementById(overlayId).style.height = '50%';
+        document.getElementById(overlayId).style.height = '100%';
         document.getElementById(id).style.width = '250px';
         flag = 1;
     }
