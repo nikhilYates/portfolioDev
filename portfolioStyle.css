@@ -593,15 +593,34 @@ text-decoration: none;
 color: #fff;
 }
 
-/* #hamburger-input:checked + #hamburger-menu #sidebar-menu {
-visibility: visible;
-right: 0;
-}
-#hamburger-input:checked ~ .overlay{
-visibility: visible;
-opacity: 0.4;
-} */
+.robotics-info {
 
+    display:flex;
+    height: 700px;
+    
+}
+
+.robotics-info-left {
+    flex:1;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+.robotics-info-right {
+    flex:1;
+    padding: 15px;
+    
+}
+
+.rrt-video {
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    
+}
 
 @media screen and (max-width: 1200px) {
 
