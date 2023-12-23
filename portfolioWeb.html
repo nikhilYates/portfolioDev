@@ -8,110 +8,118 @@
         
     </head>
     
+    
+
     <body class = "main">
         <div class = "scrollCont">
 
             <!-- New scroll Area for top-->
-
+            
             <div class="scrollArea">
-                <a name="top"></a>
-                <br>
-                <br>
-                <header class="header">
-                    <div class="desktop">
-                        <a class = "tiger" href="#top"><img src = "nyWhite.svg" alt = "TIGER" style="height:10%;width:10%;"></a>
-                        <a class = "slabz" href="scorpion.html" target="_blank"><img src="scorpionLabz/sLabz.png" alt="zLABZ" style="height: 10%;width: 10%;float: right;margin-top: -5vh"></a>
+                <div class="vid-container">
+                    <video autoplay muted loop playsinline>
+                        <source src="starry.mov" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <a name="top"></a>
+                    <br>
+                    <br>
+                    <header class="header">
+                        <div class="desktop">
+                            <a class = "tiger" href="#top"><img src = "nyWhite.svg" alt = "TIGER" style="height:10%;width:10%;"></a>
+                            <a class = "slabz" href="scorpion.html" target="_blank"><img src="scorpionLabz/sLabz.png" alt="zLABZ" style="height: 10%;width: 10%;float: right;margin-top: -5vh"></a>
+                        </div>
+                        <div class="mobile">
+                            
+                        </div>
+                        <!-- <a class="bstars" href="https://www.beatstars.com/nikhxly" target="blank"><img src="whiteTiger.svg" alt="BEATSTARS" style="height:100px;width:100px;"></a> -->
+                    </header>
+                        
+                    <div class="spacer">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
                     </div>
-                    <div class="mobile">
+                        
+                        
+                    <div class = "titleCont" id="scroll1">
+                        <h1 class = "ny"> nikhil yates </h1>
+                        
+                        <div class="button-group-mobile">
+                            <br>
+                            <br>
+                            <br>
+                            <button class="info-button"><a href="#contact">contact</a></button>
+                            <button class="info-button"><a href="nikhilYates_web.pdf" target="_blank">resume</a></button>
+                        </div>
+                    </div>
+                    <div class="navCont">
+                        
+                        <nav class="nav">
+                            <a href="#work">work.</a>
+                            <a href="#about">about.</a>
+                            <a href="#contact">contact.</a>
+                        </nav>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
                         
                     </div>
-                     <!-- <a class="bstars" href="https://www.beatstars.com/nikhxly" target="blank"><img src="whiteTiger.svg" alt="BEATSTARS" style="height:100px;width:100px;"></a> -->
-                </header>
+                    <input type="checkbox" id="hamburger-input" class="hamburger-showerx" onclick="openNav()">
+                            <label id="hamburger-menu" for="hamburger-input">
+                            <nav id="sidebar-menu">
+                                <ul>
+                                    <li><a class = "resume" href="#work-mobile" onclick="hideNav()">WORK</a></li>
+                                    <li><a class = "git" href="#about" onclick="hideNav()">ABOUT</a></li>
+                                    <li><a class = "linkt" href="#contact" onclick="hideNav()">CONTACT</a></li>
+                                    <li><a class="matrix">scorpionLabz</a></li>
+                                    <li><a class = "tiger" href="#top" onclick="hideNav()"><img src = "ny.svg" alt = "TIGER" style="height:125px;width:125px;align-items:left;"></a></li>
+                                </ul>
+                        </nav>
+                        </label>
                     
-                <div class="spacer">
+
+
+
+
                     <br>
                     <br>
                     <br>
-                    <br>
-                    <br>
-                </div>
-                    
-                    
-                <div class = "titleCont" id="scroll1">
-                    <h1 class = "ny"> nikhil yates </h1>
-                    
-                    <div class="button-group-mobile">
-                        <br>
-                        <br>
-                        <br>
-                        <button class="info-button"><a href="#contact">contact</a></button>
-                        <button class="info-button"><a href="nikhilYates_web.pdf" target="_blank">resume</a></button>
+
+                        
+                    <div class="slider">
+                        <script>
+                            const circle = document.querySelector('.slider');
+                            const animationDuration = 1200; // in milliseconds
+                            // const sleepDuration = 500;
+                            let isMovingUp = true;
+
+                            function animateCircle() {
+                            const startPosition = isMovingUp ? '20%' : '50%';
+                            const endPosition = isMovingUp ? '10%' : '20%';
+
+                            circle.style.transition = `top ${animationDuration}ms ease-in-out`;
+                            circle.style.top = endPosition;
+
+                            setTimeout(() => {
+                                circle.style.transition = '';
+                                circle.style.top = startPosition;
+                                isMovingUp = !isMovingUp;
+                                animateCircle();
+                                }, animationDuration);
+                            }
+                            animateCircle();
+                        </script>    
                     </div>
                 </div>
-                <div class="navCont">
-                    
-                    <nav class="nav">
-                        <a href="#work">work.</a>
-                        <a href="#about">about.</a>
-                        <a href="#contact">contact.</a>
-                    </nav>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    
-                </div>
-                <input type="checkbox" id="hamburger-input" class="hamburger-showerx" onclick="openNav()">
-                        <label id="hamburger-menu" for="hamburger-input">
-                        <nav id="sidebar-menu">
-                            <ul>
-                                <li><a class = "resume" href="#work-mobile" onclick="hideNav()">WORK</a></li>
-                                <li><a class = "git" href="#about" onclick="hideNav()">ABOUT</a></li>
-                                <li><a class = "linkt" href="#contact" onclick="hideNav()">CONTACT</a></li>
-                                <li><a class="matrix">scorpionLabz</a></li>
-                                <li><a class = "tiger" href="#top" onclick="hideNav()"><img src = "ny.svg" alt = "TIGER" style="height:125px;width:125px;align-items:left;"></a></li>
-                            </ul>
-                    </nav>
-                    </label>
-                
-
-
-
-
-                <br>
-                <br>
-                <br>
-
-                    
-                <div class="slider">
-                    <script>
-                        const circle = document.querySelector('.slider');
-                        const animationDuration = 1200; // in milliseconds
-                        // const sleepDuration = 500;
-                        let isMovingUp = true;
-
-                        function animateCircle() {
-                        const startPosition = isMovingUp ? '20%' : '50%';
-                        const endPosition = isMovingUp ? '10%' : '20%';
-
-                        circle.style.transition = `top ${animationDuration}ms ease-in-out`;
-                        circle.style.top = endPosition;
-
-                        setTimeout(() => {
-                            circle.style.transition = '';
-                            circle.style.top = startPosition;
-                            isMovingUp = !isMovingUp;
-                            animateCircle();
-                            }, animationDuration);
-                        }
-                        animateCircle();
-                    </script>    
-                </div>
-                
             </div>
 
             <p class="p-mobile-info"> A short collection of my work, skills I've picked up, and ways to get in touch...</p>
@@ -351,11 +359,13 @@
             <div class="scrollArea" id="robotics">
                 <div class="robotics-main">
                     <h2 class="PROJNAME" style="color:rgb(200, 36, 222)">ROBOTICS</h2>
+                    <hr>
+                    <br>
                     <div class="robotics-info">
                         <div class="robotics-info-left">
                             <h1 style="font-size:60px"><b>Plan. Implement. Build.</b></h1>
                             <p style="font-size: 50px">RRT-based algorithm for a path finding robot. Algorithm design and implementation was done in 48 hours with the 
-                                <span style="color:rgb(36, 204, 39)">Adit Jain</span>. Check out our video demonstration for our actualy implementation in Gazebo.</p> 
+                                <span style="color:rgb(36, 204, 39)">Adit Jain</span>. Check out our video demonstration for the actual implementation in Gazebo.</p> 
                         </div>
                         <div class="robotics-info-right">
                             <video class="rrt-video" autoplay loop muted="muted" volume="0">
@@ -364,13 +374,45 @@
                         </div>
                     </div>
                 </div>
+                <br>
+                <hr>
+                <br>
+                <div class="robotics-info">
+                    <div class="robotics-info-left">
+                        <h1 style="font-size:60px"><b>Precision x Accuracy</b></h1>
+                        <p style="font-size:50px">Manipulating the Kinova Gen3 lite robot. Wrote my own software to control 6 actuators and simulate a sorting process. Focused on cartesian and angular movements across
+                        the 3D space.</p>
+                    </div>
+                    <div class="robotics-info-right">
+                        <video class="kinova-video" autoplay loop muted="muted" volume="0">
+                            <source src="kinova_demo.mov">
+                        </video>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="robotics-info">
+                    <div class="robotics-info-left">
+                        <h1 style="font-size:60px"><b>Eat, Sleep, Train, Repeat</b></h1>
+                        <p style="font-size:50px">Using the TensorFlow library, succesfully trained a neural network and used it to produce a line-following robot. Experimented with connection drop-out, changing the number of hidden levels, etc. </p>
+                    </div>
+                    <div class="robotics-info-right">
+                        <video class="nn-follower-video" autoplay loop muted="muted" volume="0">
+                            <source src="NN_folower.mov">
+                        </video>
+                    </div>
+                </div>
+                <br>
+                <hr>
             </div>
             
             
             <br>
             <br>
             <br>
-            
+
+
             <!-- New scroll Area for about-->
             <div class="scrollArea" id="about-resume"> 
                 
@@ -432,7 +474,7 @@
                 </div>
                 <br>
                 <br>
-                <div class="PROJNAMEend">SCORPIONLABZ LAUNCH FALL 2023</div>
+                <div class="PROJNAMEend">SCORPIONLABZ LAUNCH WINTER 2023</div>
                 <br>
                 <br>
                 <br>

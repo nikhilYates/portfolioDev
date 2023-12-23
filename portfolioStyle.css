@@ -4,9 +4,17 @@ html {
     background-color: black;
     scroll-snap-type: y proximity;
     scrollbar-gutter: initial;
-    
-
+    overflow-x: hidden;
 }
+
+.vid-container {
+    
+    position: absolute; 
+    top: 0; left:0;
+    width: 100%; height: 100%; 
+    z-index: -1;
+}
+
 
 ::-webkit-scrollbar {
     color: black;
@@ -67,6 +75,8 @@ body {
 
 .titleCont {
     justify-content: center;
+    
+
 }
 
 .slider {
@@ -596,14 +606,14 @@ color: #fff;
 .robotics-info {
 
     display:flex;
-    height: 700px;
+    height: 600px;
     
 }
 
 .robotics-info-left {
     flex:1;
     border-radius: 15px;
-    padding: 15px;
+    
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 
@@ -611,15 +621,27 @@ color: #fff;
 
 .robotics-info-right {
     flex:1;
-    padding: 15px;
+    width: 500px;
+    /* border: 1px solid white; */
+    
     
 }
 
 .rrt-video {
     height: 100%;
-    width: 100%;
-    padding: 15px;
-    
+    float: right;
+}
+
+.kinova-video {
+    height: 100%;
+    float: right;
+}
+
+.nn-follower-video {
+
+    width: 90%;
+    height: 100%;
+    float: right;
 }
 
 @media screen and (max-width: 1200px) {
