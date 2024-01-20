@@ -8,12 +8,12 @@ html {
 }
 
 .vid-container {
-    
     position: absolute; 
     top: 0; left:0;
     width: 100%; height: 100%; 
     z-index: -1;
 }
+
 
 .inline-adit {
 
@@ -285,9 +285,6 @@ a.PROJLINK:hover {
 .tiger a:hover {
     opacity: 80%;
 }
-
-
-
 
 /*
     Styling for the slideshow projects/experience
@@ -678,6 +675,9 @@ color: #fff;
         
     }
 
+    .robotics-info {
+        display: block;
+    }
 
     .scrollArea {
         min-height: 100vh;
@@ -764,6 +764,18 @@ color: #fff;
         font-size: 20px;
     }
 
+
+    .robotics-info {
+        display: block;
+    }
+
+    #robotics {
+        min-height: fit-content;
+    }
+
+    .vid-container {
+        visibility: hidden;
+    }
    
     #scroll1 {
         height: 80vh;
