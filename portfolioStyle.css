@@ -14,6 +14,10 @@ html {
     z-index: -1;
 }
 
+.scrollCont {
+    display: block;
+}
+
 
 .inline-adit {
 
@@ -95,7 +99,7 @@ body {
   }
 
 .scrollArea {
-    display:contents;
+    display:block;
     padding-left: 1%;
     padding-right: 1%;
     padding-bottom: 1%;
@@ -267,6 +271,7 @@ a.PROJLINK:hover {
     overflow:visible;
     padding-left: 10px;
     padding-right: 10px;
+    display: block;
     /* border: 1px solid white; */
 }
 
@@ -362,7 +367,7 @@ a.caption {
 }
 
 #about-resume {
-    height: 100vh;
+    height: fit-content;
 }
 
  .contact .overlay {
@@ -610,17 +615,23 @@ text-decoration: none;
 color: #fff;
 }
 
+.robotics-main {
+    display: block;
+
+}
+
 .robotics-info {
 
     display:flex;
     height: fit-content;
+
     
 }
 
 .robotics-info-left {
     flex:1;
     border-radius: 15px;
-    
+
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 
@@ -628,8 +639,7 @@ color: #fff;
 
 .robotics-info-right {
     flex:1;
-    
-    
+    min-height: 100%;
 }
 
 .rrt-video {
@@ -644,8 +654,7 @@ color: #fff;
 
 .nn-follower-video {
 
-    width: 90%;
-    height: 100%;
+    width: 100%;
     float: right;
 }
 
@@ -675,8 +684,17 @@ color: #fff;
         
     }
 
+    #robotics {
+        display: block;
+        min-height: fit-content;
+    }
+
     .robotics-info {
         display: block;
+    }
+
+    .robotics-info-right {
+        height: 60vh;
     }
 
     .scrollArea {
@@ -754,6 +772,7 @@ color: #fff;
 
     html {
         scroll-snap-type: none;
+        overflow-x: hidden;
 
     }
 
@@ -767,6 +786,8 @@ color: #fff;
 
     .robotics-info {
         display: block;
+        min-height: fit-content;
+        
     }
 
     #robotics {
@@ -804,6 +825,7 @@ color: #fff;
 
     .scrollArea-mobile {
         display: flex;
+        height: fit-content;
     }
 
     #first-work-block-mobile {
