@@ -26,6 +26,21 @@ function infoSlider(id, overlayId) {
 
 }
 
+flagOne = 0
+function vdaySlider(id, overlayId) {
+    if (flagOne === 0) {
+        document.getElementById(overlayId).style.height = '100%';
+        document.getElementById(id).style.width = '100%';
+        flagOne = 1;
+    }
+    else {
+        document.getElementById(overlayId).style.height = '0';
+        document.getElementById(id).style.width = '100%';
+        flagOne = 0;
+    }
+}
+
+
 document.addEventListener('click', function(e) {
     if(!document.getElementById("hamburger-input").contains(e.target) && !document.getElementById("sidebar-menu").contains(e.target)) {
         console.log("reached inner");

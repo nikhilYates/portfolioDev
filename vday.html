@@ -4,7 +4,7 @@
         <head>
             <title class> 4MyBaby </title>
             <link rel = "stylesheet" type = "text/css" href = "vday.css" title = "style">
-            
+            <script src = "portfolio.js"></script>
         </head>
         <body>
             
@@ -14,9 +14,11 @@
                     what do i think about <span class="intro-text-span">when i think about you?</span>
                 </h1>
                 <div class="vday-button">
-                    <a class="vday-button-a" href="#your-love">find out...</a>
+                    <a class="vday-button-a" href="#your-love">kiss me</a>
                 </div>
             </div>
+            <br>
+            <br>
 
             <!-- your love block -->
             <a name="your-love"></a>
@@ -45,25 +47,56 @@
                     </div>
                 </div>
                 <div class="vday-sched-lower">
-                    <h1 class="vday-sched-tonight">
-                        TONIGHT...
+                    <h1 class="vday-sched-lower-h1">
+                        can't imagine doing anything without you
                     </h1>
-                </div>
-                <div class="vday-button-wrapper">
-                    <div class="vday-button">
-                        <a class="vday-button-a" href="#your-love">the sched</a>
-                    </div>     
                 </div>
             </div>
 
             <!-- tonight -->
             <div class="tonight">
-                <div class="step-1">
-                    
+                <h1 class="vday-sched-tonight">
+                    TONIGHT...
+                </h1>
+                <div class="step" id="step-1" onclick="vdaySlider('step-1', 'step-1-overlay')">
+                    <div>
+                        <h1 class="step-title">7:30 PM</h1>
+                    </div>
+                    <div class="vday-overlay" id="step-1-overlay">
+                        <p class="vday-mobile-info">1198 Queen St W</p>
+                    </div>
                 </div>
+                <br>
+                <div class="step" id="step-2" onclick="vdaySlider('step-2', 'step-2-overlay')">
+                    <div>
+                        <h1 class="step-title">9:30 PM</h1>
+                    </div>
+                    <div class="vday-overlay" id="step-2-overlay">
+                        <p class="vday-mobile-info">1378 Queen St W</p>
+                    </div>
+                </div>
+                <br>
+                <div class="step" id="step-3" onclick="vdaySlider('step-3', 'step-3-overlay')">
+                    <div>
+                        <h1 class="step-title">late</h1>
+                    </div>
+                    <div class="vday-overlay" id="step-3-overlay">
+                        <p class="vday-mobile-info">1858 Original</p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
 
             </div>
             
+
+            <!-- footer -->
+            <h1 class="your-love-middle-h1">i love you .</h1>
 
         </body>
     </html>
