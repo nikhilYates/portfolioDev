@@ -74,10 +74,26 @@ function openNav() {
     document.getElementById("scroll1").style.opacity = '50%';
     document.getElementById("about-resume").style.opacity = '50%';
     document.getElementById("scroll4").style.opacity = '50%';
-
-    
-
 }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const videos = document.querySelectorAll('.robot-video');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.play();
+        } else {
+          entry.target.pause();
+        }
+      });
+    }, { threshold: 0.5 }); // threshold: 0.5 means at least 50% of the video must be visible for it to play
+
+    videos.forEach(video => {
+      observer.observe(video);
+    });
+  });
+
 
 
 
